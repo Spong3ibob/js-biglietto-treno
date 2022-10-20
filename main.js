@@ -1,20 +1,19 @@
 const age = Number( prompt("Inserisci la tua età") );
 const travelKilometers = Number( prompt("Inerisci i kilometri che vuoi percorrere") );
 const travel = travelKilometers * 0.25;
-console.log(travel);
-let result;
+let resultjunior;
 if(age <= 18){
-    result = travel 
+    resultjunior = travel - (travel * 0.2);
+    console.log( "Prezzo scontato junior" + " " + resultjunior + "€")
 }else{
-    result = ("maggiore18")
+    console.log( "Prezzo intero" + " " + travel + "€");
 }
-let totalejung = travel - (travel * 0.2);
-console.log(totalejung + "€");
-let resultover;
-if(age <= 65){
-    resultover = travel
+
+let resultsenior;
+if(age >= 65){
+    resultsenior = travel - (travel * 0.4);
+    console.log( "Prezzo scontato senior" + " " + resultsenior + "€")
 }else{
-    result = ("minore65")
+    console.log( "Prezzo intero" + " " + travel + "€");
 }
-let totaleover = travel - (travel * 0.4);
-console.log(totaleover + "€");
+
